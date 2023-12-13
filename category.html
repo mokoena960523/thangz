@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>category</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+<body>
+
+   <header class="header">
+
+      <div class="flex">
+
+         <a href="admin_page.php" class="logo">Thangz<span>.</span></a>
+
+         <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="shop.html">shop</a>
+            <a href="orders.html">orders</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+         </nav>
+
+         <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+            <a href="search_page.html" class="fas fa-search"></a>
+         
+            <a href="wishlist.html"><i class="fas fa-heart"></i><span>(3)</span></a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(3)</span></a>
+         </div>
+
+         <div class="profile">
+           
+            <img src="https://th.bing.com/th/id/R.6b0022312d41080436c52da571d5c697?rik=ejx13G9ZroRrcg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fuser-png-icon-young-user-icon-2400.png&ehk=NNF6zZUBr0n5i%2fx0Bh3AMRDRDrzslPXB0ANabkkPyv0%3d&risl=&pid=ImgRaw&r=0" alt="">
+            <p>mokoena sonnyboy</p>
+            <a href="#" class="btn">update profile</a>
+            <a href="#" class="delete-btn">logout</a>
+            <div class="flex-btn">
+               <a href="login.html" class="option-btn">login</a>
+               <a href="register.html" class="option-btn">register</a>
+            </div>
+         </div>
+
+      </div>
+
+   </header>
+   <section class="products">
+
+      <h1 class="title">products categories</h1>
+
+      <div class="box-container">
+      <form action="" class="box" method="POST">
+         <div class="price">R<span>150</span>.00</div>
+         <a href="view_page.html?pid=" class="fas fa-eye"></a>
+         <img src="https://pluspng.com/img-png/coke-png-901.png" alt="">
+         <div class="name"></div>
+         <input type="hidden" name="pid" value="">
+         <input type="hidden" name="p_name" value="">
+         <input type="hidden" name="p_price" value="">
+         <input type="hidden" name="p_image" value="">
+         <input type="number" min="1" value="1" name="p_qty" class="qty">
+         <input type="submit" value="add to wishlist" class="option-btn" name="add_to_wishlist">
+         <input type="submit" value="add to cart" class="btn" name="add_to_cart">
+      </form>
+     
+
+      </div>
+
+   </section>
+
+
+<!-- loader -->
+   <div class="loader-container">
+      <img src="https://media.giphy.com/media/w7jtVnXxMOq08/giphy.gif">
+   </div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
